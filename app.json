@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/movieRoom/movieRoom",
+    "pages/performance/performance",
+    "pages/competition/competition",
+    "pages/locations/locations"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "电影演出赛事",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eee",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "red",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影",
+        "iconPath": "pages/assets/images/movie.png",
+        "selectedIconPath": "pages/assets/images/movie_red.png"
+      },
+      {
+        "pagePath": "pages/movieRoom/movieRoom",
+        "text": "影院",
+        "iconPath": "pages/assets/images/room.png",
+        "selectedIconPath": "pages/assets/images/room_red.png"
+      },
+      {
+        "pagePath": "pages/performance/performance",
+        "text": "演出",
+        "iconPath": "pages/assets/images/performance.png",
+        "selectedIconPath": "pages/assets/images/performance_red.png"
+      },
+      {
+        "pagePath": "pages/competition/competition",
+        "text": "赛事",
+        "iconPath": "pages/assets/images/comption.png",
+        "selectedIconPath": "pages/assets/images/comption_red.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/assets/images/mine.png",
+        "selectedIconPath": "pages/assets/images/mine_red.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,37 @@
+/* pages/locations/locations.wxss */
+.locations_bar{
+  font-size: 20rpx;
+  height: 50rpx;
+  background: #dcdcde;
+  line-height: 50rpx;
+  padding-left: 50rpx;
+
+}
+.localtion_city{
+  text-align: left;
+}
+.primary {
+  height: 70rpx;
+  /* width: 200rpx; */
+  padding-left: 65rpx;
+  padding-right: 65rpx;
+  line-height: 70rpx;
+  background-color: #fff;
+  display: inline-block;
+  margin: 20rpx;
+}
+.hotItem {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+ 
+}
+.localtion_city .hotItem{
+  border-bottom: 1px solid #ccc;
+}
+.localtion_city .hotItem:last-child{
+  border-bottom: none;
+}
+.localtion_city.localtion_city2{
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}

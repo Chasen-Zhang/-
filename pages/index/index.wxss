@@ -1,0 +1,127 @@
+.top_bar{
+  color: #333333;
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-bottom: 1px solid gainsboro;
+  position: relative;
+}
+.top_bar .last_text{
+  margin-left: 40rpx;
+}
+.top_bar .header.avtive{
+  color: red;
+  border-bottom: 1px solid red;
+}
+.top_bar .header{
+  height: 95%;
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+}
+.top_bar .location{
+  position: absolute;
+  left: 10rpx;
+  top:0;
+  font-size: 25rpx;
+}
+.top_bar .location .arrow {
+  height: 25rpx;
+  width: 25rpx;
+  position: relative;
+  top: 4rpx;
+}
+.top_bar .search{
+  height: 60rpx;
+  width: 60rpx;
+  /*  */
+}
+.top_bar .search_wrap{
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  top: 0rpx;
+  right: 10rpx;
+  padding-top: 10rpx;
+  border-left:1px solid gainsboro;
+  padding-left: 10rpx;
+}
+.swiper_img{
+  width: 100%;
+  height: 200rpx;
+}
+swiper {
+  height: 180rpx;
+}
+.poster{
+  width: 120rpx;
+  height: 170rpx;
+}
+.text_content{
+  padding-left: 20rpx;
+  font-size: 40rpx;
+}
+.d3MaX{
+  /* border: 1px solid blue; */
+  font-size: 20rpx;
+  color: green;
+  border-radius: 5rpx;
+  height: 100%;
+  position: relative;
+  top: -5rpx;
+}
+.d3MaX view:first-child{
+  background-color: blue;
+  color: #fff;
+  height: 100%;
+  padding-top: 3rpx;
+  padding-bottom: 3rpx;
+}
+.d3MaX view:last-child{
+  border: 1px solid blue;
+   border-radius: 5rpx;
+}
+.d3MaX view{
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.score{
+  color: goldenrod;
+}
+.score_wrap{
+  color: #333333;
+  font-size: 30rpx;
+}
+.data_descripton{
+  color: #444;
+  font-size: 25rpx;
+}
+.item_view{
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 15rpx;
+  padding-top: 10rpx;
+}
+.playing{
+  padding: 20rpx;
+  padding-right: 0;
+}
+.buy_btn{
+  bottom: 50rpx;
+  right: 20rpx;
+  height: 50rpx;
+  font-size: 20rpx;
+  background-color: red;
+  color: #fff;
+}
+.buy_btn.buy_btn_pre{
+  background: green;
+}
+.tehui{
+  color: white;
+  background-color: orangered;
+  font-size: 20rpx;
+  padding: 10rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  
+}

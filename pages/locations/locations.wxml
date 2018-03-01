@@ -1,0 +1,21 @@
+<!--pages/locations/locations.wxml-->
+<view class='locations_bar'>定位城市</view>
+<view class='localtion_city'>
+  <button class='primary' bindtap='gotoHome'>{{city}}</button>
+</view>
+<view class='locations_bar'>最近访问城市</view>
+<view class='localtion_city'>
+  <button class='primary' bindtap='gotoHome' wx:key="{{name}}" wx:for="{{recentVisit}}">{{item.name}}</button>
+</view>
+<view class='locations_bar'>热门城市</view>
+<view class='localtion_city'>
+  <button class='primary' bindtap='gotoHome' wx:key="{{item}}" wx:for="{{hotCity}}">{{item.name}}</button>
+</view>
+
+<view wx:for="{{class_city}}" wx:key="{{chart}}" wx:for-item="chart">
+  <view class='locations_bar'>{{chart}}</view>
+  <view class='localtion_city localtion_city2'>
+    <view class='hotItem' bindtap='gotoHome' wx:key="{{item}}" wx:for="{{hotLocationCity[chart]}}">{{item.name}}</view>
+  </view>
+</view>
+

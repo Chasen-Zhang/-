@@ -1,0 +1,47 @@
+<view>
+  <view class="top_bar">
+    <text class='header {{show?"avtive":""}}' id='play' bindtap='changeView'>正在上映</text>
+    <text class='last_text header {{show?"":"avtive"}}' id='willplay' bindtap='changeView'>即将上映</text>
+    <view class='location' bindtap='locations'>{{city}} <image class='arrow' src='../assets/images/arrow.png'></image></view>
+    <view class='search_wrap'><image class='search' src='../assets/images/search.png'></image></view>
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}"
+    circular="true"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" class='swiper_img'/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view>
+    <view class='playing' wx:if="{{show}}">
+      <view class='clear item_view pr' wx:for="{{item}}" wx:for-item="list_item" wx:for-index="idx" wx:key="id">
+        <image src='{{list_item.poster}}' class='poster fl'></image>
+        <text class='db tehui pa' wx:if='{{list_item.tehui}}'>特惠</text>
+        <view class='fl text_content'>
+          <view class=''>
+            {{list_item.name}}
+            <view class='dl d3MaX'>
+                <view class='dl' hidden='{{!list_item.type["dHave"]}}'><text wx:if="{{list_item.type['3D']}}">3D</text><text wx:if="{{list_item.type['2D']}}">2D</text></view>
+                <view class='dl' wx:if="{{list_item.type['IMAX']}}">IMAX</view>
+            </view>
+          </view>
+          <view>
+            <view wx:if="{{list_item.buyType!=1}}"  class='score_wrap'>猫眼评分 <text class='score'>{{list_item.score}}</text></view>
+            <view wx:if="{{list_item.buyType==1}}" class='score_wrap'><text class='score'>{{list_item.wantWhich}}</text> 想看</view>
+          </view>
+          <view class='score_wrap'>主演:<text class='' wx:for="{{list_item.start}}" wx:for-item="list_start" wx:key="list_start" wx:for-index="idx_start">{{list_start}}  </text></view>
+          <view class='data_descripton'>
+            <view wx:if="{{list_item.buyType!=1}}">今天<text>{{list_item.data.no}}</text>家影院放映<text>{{list_item.data.scene}}</text><text>场</text></view>
+            <view wx:if="{{list_item.buyType==1}}">2018-03-02 本周五上映</view>
+          </view>
+          <button wx:if="{{list_item.buyType!=1}}" class='pa buy_btn'>购票</button>
+          <button wx:if="{{list_item.buyType==1}}" class='pa buy_btn buy_btn_pre'>预售</button>
+        </view>
+      </view>
+    </view>
+     <view wx:if="{{!show}}" class='willPlay'>即将上映</view> 
+  </view>
+</view>

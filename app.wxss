@@ -1,0 +1,78 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+view {
+  box-sizing: border-box;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.w50 {  width: 50%;  }
+
+.h50 {  height: 50%;  }
+
+.db {  display: block;  }
+
+.dl {  display: inline-block;  }
+
+.hide {  display: none;  }
+
+.hidden {  visibility: hidden;  }
+
+/*clear and float*/
+.clear::after, .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pr {  position: relative;  }
+.pa {  position: absolute;  }
+.pf {  position: fixed;  }
+
+.w_100{  width: 100%;  }
+.h_100{  height: 100%;  }
+.giveMeEllipsis {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-normal {
+  font-weight: normal;
+}
+
+.t-weight {
+  font-weight: 700;
+}
+
+.t-weightM {
+  font-weight: 400;
+}
+
+.t-italic {
+  font-style: italic;
+}
