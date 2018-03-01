@@ -1,0 +1,73 @@
+/***********通用基本类1************/
+/*格式化样式*/
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,button,fieldset,input,textarea,p,blockquote,table,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+header, footer, section, article, aside, nav, address, figure, figcaption, menu, details {display: block;}
+fieldset,img {border:0}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal}
+ol,ul {list-style:none;}
+li{
+    list-style:none ;
+}
+a{text-decoration: none;}
+a:hover{text-decoration:none;cursor: pointer;}
+/*.box-main{
+	overflow: hidden;
+}*/
+html,body,textarea{
+    height: 100%;
+    width: 100%;
+    font-weight: normal;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    color:#383838;
+}
+*{
+    box-sizing: border-box;
+}
+.w{width:100%}
+.h{height:100%}
+/*------------ text -------------*/
+.tl { text-align:left}
+.tc { text-align:center}
+.tr { text-align:right}
+
+/*------------ float ------------*/
+.fl{float:left;display:inline-block}
+.fr{float:right;display:inline-block}
+
+/*------------ clear-float ---------*/
+/*.clear{content: ".";display: block;clear: both;}*/
+.clear{*zoom:1;}
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cursor{cursor: pointer;}
+.border{border: 1px solid #CCCCCC}
+.b-bottom{border-bottom: 1px solid #CCCCCC}
+.b-top{border-top: 1px solid #CCCCCC}
+.b-right{border-right: 1px solid #CCCCCC}
+.b-left{border-left: 1px solid #CCCCCC}
+.b-radius{border-radius: 50%}
+
+/*------------ position ------------*/
+.pr { position:relative;}
+.pa { position:absolute;}
+.pf { position: fixed;}
+
+/*clearfix*/
+.clearfix{
+    *zoom: 1;
+}
+.clearfix:after, .clearfix:before,
+.row:after{
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    content: "";
+}
+.clearfix:after{
+    clear: both;
+}

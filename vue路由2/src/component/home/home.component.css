@@ -1,0 +1,12 @@
+.home{
+	color: blue;
+}
+.list{
+	display: inline-block;
+	width: 200px;
+	height: 60px;
+	background-color: green;
+}
+.list.listBig{
+	background-color: gray;
+}
