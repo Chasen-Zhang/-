@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/test/test",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/jumpT/jump"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor":"#ccc",
+    "navigationBarTitleText": "家政服务",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#eee",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color":"blue",
+    "selectedColor":"red",
+    "borderStyle":"black",
+    "list": [
+     {
+      "pagePath": "pages/test/test",
+      "text": "test"
+    },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+       {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

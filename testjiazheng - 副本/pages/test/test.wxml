@@ -1,0 +1,39 @@
+<!-- <view>{{text}}</view>
+<button bindtap="changeText"> Change normal data </button>
+<view>{{num}}</view>
+<button bindtap="changeNum"> Change normal num </button>
+<view wx:for="{{array}}">{{item.text}}</view>
+<button bindtap="changeItemInArray"> Change Array data </button>
+<view>{{object.text}}</view>
+<button bindtap="changeItemInObject"> Change Object data </button>
+<view>{{newField.text}}</view>
+<button bindtap="addNewField"> Add new data </button>
+
+<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+<view wx:elif="{{view == 'APP'}}"> APP </view>
+<view wx:else="{{view == 'MINA'}}"> MINA </view>
+
+<template name="staffName">
+  <view class="haha">
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+</template>
+
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+<view wx:if="{{condition}}" id="item-{{id}}">kjkk</view>
+
+<checkbox bindtap='changeFlag' checked="{{flag}}"> </checkbox>
+
+<view hidden="{{flag ? true : false}}"> Hidden </view> -->
+<!-- <wxs src="./common.wxs" module="tools"></wxs>
+<view> {{tools.msg}} </view>
+<view> {{tools.bar("89")}} </view> -->
+
+<!-- <wxs src="./common2.wxs" module="logic" />
+
+<video controls="{{!canIUse}}">
+  <cover-view wx:if="{{canIUse}}">play</cover-view>
+</video> -->

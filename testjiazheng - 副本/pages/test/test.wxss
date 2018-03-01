@@ -1,0 +1,5 @@
+/* pages/test/test.wxss */
+.haha {
+  color: red;
+  font-weight: bold;
+}

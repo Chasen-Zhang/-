@@ -1,0 +1,102 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <view> Hello {{name}}! </view>
+    <map bindmarkertap="markertap" longitude="113.332085"latitude="23.143179" style='height:200rpx'></map>
+    <map></map> 
+    <button bindtap="changeName"> Click me! </button>
+  </view>
+</view> -->
+<!-- <view class="section">
+  <view class="section__title">flex-direction: row</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green" hover-class="hoverclass">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+<view class="section">
+  <view class="section__title">flex-direction: column</view>
+  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view> -->
+<!-- <swiper indicator-dots="{{indicatorDots}}"
+  circular=true
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style='width:100%' height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<button bindtap="changeIndicatorDots"> indicator-dots </button>
+<button bindtap="changeAutoplay"> autoplay </button>
+<slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration -->
+<!-- <view class="section">
+  <view class="section__title">movable-view区域小于movable-area</view>
+  <movable-area style="height: 200px;width: 200px;background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+  </view>
+  <view class="section__title">movable-view区域大于movable-area</view>
+  <movable-area style="height: 100px;width: 100px;background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;"  direction="all">
+    </movable-view>
+  </movable-area>
+</view> -->
+<!-- <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls="{{false}}" event-model="bubble">
+  <cover-view class="controls">
+    <cover-view class="play" bindtap="play">
+      <cover-image class="img" src="../assets/images/play.png" />
+    </cover-view>
+    <cover-view class="pause" bindtap="pause">
+      <cover-image class="img" src="../assets/images/pause.png" />
+    </cover-view>
+    <cover-view class="time">00:00</cover-view>
+  </cover-view>
+</video>
+
+<progress percent="20" show-info />
+<progress percent="40" stroke-width="12" />
+<progress percent="60" color="pink" />
+<progress percent="80" active /> -->
+<!-- <view class="section tc">
+  <video src="{{src}}"   controls ></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+  </view>
+</view>
+
+<view class="section tc">
+  <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+</view> -->
+<!-- camera.wxml -->
+ <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+<button type="primary" bindtap="takePhoto">拍照</button>
+<view>预览</view>
+<image mode="widthFix" src="{{src}}"></image> 
+<map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+<canvas style="width: 300px; height: 200px;" canvas-id="firstCanvas"></canvas>
+
+
+
